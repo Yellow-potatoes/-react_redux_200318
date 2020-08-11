@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 该文件是定义redux中最核心的管理者————store
 
 // 引入createStore，用于创建redux中最核心的对象——————store
@@ -5,6 +6,15 @@ import {createStore, applyMiddleware} from 'redux'
 // 引入countReducer,用于加工Count组件的状态
 import countReducer from './count-reducer'
 // 引入thunk，用于支持异步aciton
+=======
+// 该文件是定义redux中最核心的管理者——store
+
+// 引入createStore，用于创建redux中最核心的对象————store
+import {createStore,applyMiddleware} from 'redux'
+// 引入countReducer，用于加工Count组件的状态
+import countReducer from './count_reducer'
+// 引入thunk，用于支持异步action
+>>>>>>> dfdcafd526c452215f35ec365b710adabf9e607a
 import thunk from 'redux-thunk'
 
 // 调用createStore(xxxReducer)可以生成一个store对象
