@@ -4,15 +4,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // 引入store
 import store from './redux/store'
-// 引入Provider,给所有的App子组件提供: store
+// 引入Provider,给所有的子组件: store
 import {Provider} from 'react-redux'
 // 引入App组件
 import App from './App'
+// 初次渲染状态
 
-
-  ReactDOM.render(
+ReactDOM.render(
   <Provider store={store} >
     <App/>
   </Provider>,
   document.getElementById('root')
-  )
+)
+
+ 
