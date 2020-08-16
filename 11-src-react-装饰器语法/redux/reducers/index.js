@@ -9,6 +9,6 @@ import personReducer from './person'
 
 // combineReducers所传入的那个对象，就是redux中的总状态对象！！！！！
 export default combineReducers({
-  he:countReducer,
-  rens:personReducer
+  count:countReducer,
+  persons:personReducer
 })

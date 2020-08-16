@@ -43,8 +43,8 @@ class Person extends Component {
 
 export default connect(
   (state)=>({//映射状态
-    count:state.he,
-    persons:state.rens
+    count:state.count,
+    persons:state.persons
   }),
   {//映射操作状态的方法
     addRen:addpersonAction

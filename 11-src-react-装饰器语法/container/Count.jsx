@@ -11,6 +11,18 @@ import {
 
 
 // 定义Count的UI组件
+@connect(
+  // state是redux中的状态对象
+  state => ({
+    count:state.count,
+    persons:state.persons
+  }),
+  {
+    increment:incrementAction,
+    decrement:decrementAction,
+    incrementWait:incrementWaitAction,
+  }
+)
 class Count extends Component {
 
   state = {
@@ -73,14 +85,4 @@ class Count extends Component {
 }
 
 // 暴露connect()()生成的容器组件
-export default connect(
-  state => ({
-    count:state.he,
-    persons:state.rens
-  }),
-  {
-    increment:incrementAction,
-    decrement:decrementAction,
-    incrementWait:incrementWaitAction,
-  }
-)(Count)
+export default Count
